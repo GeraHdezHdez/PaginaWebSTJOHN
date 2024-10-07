@@ -1,0 +1,119 @@
+:root {
+    --dark: #16191C;
+    --dark-x: #1E2126; 
+    --light: #ffffff;
+}
+
+body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    color: var(--light);
+}
+
+.text-light { color: var(--light) !important; }
+.bg-dark { background-color: var(--dark) !important; }
+.bg-dark-x { background-color: var(--dark-x); }
+
+.btn {
+    min-height: 3.125rem;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 3.125rem;
+    line-height: initial;
+    background-color: var(--light); /* Aseguramos que el fondo sea blanco */
+    color: var(--dark); /* Aseguramos que el texto sea oscuro */
+}
+.form-control:focus {
+    background-color: var(--light); /* Mantener blanco al recibir foco */
+    color: var(--dark); /* Mantener texto oscuro al recibir foco */
+    outline: none;
+    box-shadow: 0 0 0 .2rem rgba(0, 123, 255, .25); /* Añadir un pequeño efecto de sombra para el foco */
+}
+
+.img-1 {
+    background-image: url('/imagenes/img-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.img-2 {
+    background-image: url('/imagenes/img-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.google_translate_element {
+    display: none;
+}
+
+/* Define un color verde para el focus del botón de WhatsApp */
+.btn-whatsapp:focus {
+    outline: none; /* Quita el borde por defecto */
+    box-shadow: 0 0 0 0.2rem rgba(37, 211, 102, 0.5); /* Aplica un sombreado verde */
+    border-color: #25D366; /* Cambia el color del borde */
+}
+
+/* Opcional: Cambiar el color de fondo en el foco */
+.btn-whatsapp:focus {
+    background-color: #25D366; /* Cambia el fondo al verde */
+    color: #fff; /* Asegúrate de que el texto sea legible */
+}
+
+/* Cambia el color de fondo al verde cuando el cursor se posicione sobre el botón */
+.btn-whatsapp:hover {
+    background-color: #25D366; /* Cambia el fondo al verde */
+    color: #fff; /* Asegúrate de que el texto sea legible */
+}
+
+.bg-image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .bg-image {
+        background-size: contain;
+        height: 50vh;
+    }
+}
+
+.col-lg-6 {
+    display: flex;
+    flex-direction: column;
+}
+
+.col-lg-6 .text-center {
+    flex-grow: 1;
+}
+
+.centrado {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5); /* Fondo semitransparente para mejor visibilidad del texto */
+    padding: 10px;
+    font-size: x-large;
+}
+
+
+.navbar-nav .nav-item.active .nav-link {
+    color: #000000; /* Cambia el color del texto del elemento activo */
+    font-weight: bold; /* Opcional: hacer el texto más grueso */
+    background-color: #f8f9fa; /* Opcional: cambiar el fondo del elemento activo */
+    border-radius: 5px; /* Opcional: agregar bordes redondeados */
+}
+
+/* Opcional: agregar un estilo de fondo al hacer hover en los elementos del menú */
+.navbar-nav .nav-item .nav-link:hover {
+    color: #000000; /* Cambia el color del texto al hacer hover */
+    background-color: #e9ecef; /* Cambia el fondo al hacer hover */
+    border-radius: 5px; /* Agregar bordes redondeados */
+}
